@@ -28,5 +28,10 @@ end
 # using director_data as input
 def gross_for_director(director_data)
   binding.pry
-  return directors_totals(nds)
+  total_director_gross = 0
+  new_idx = 0
+  while new_idx < director_data[:movies].length do
+    total_director_gross += director_data[:movies][new_idx][:worldwide_gross]
+    new_idx += 1
+  end
 end
