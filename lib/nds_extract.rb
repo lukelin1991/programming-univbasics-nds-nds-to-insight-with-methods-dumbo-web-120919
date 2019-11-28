@@ -34,4 +34,5 @@ def gross_for_director(director_data)
     total_director_gross += director_data[:movies][new_idx][:worldwide_gross]
     new_idx += 1
   end
+  return total_director_gross
 end
